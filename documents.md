@@ -1,3 +1,29 @@
+
+# docker, docker-compose
+
+## 1. gitを使えるようにする<br>
+```
+sudo yum update -y
+sudo yum install -y git
+```
+ハンズオンの資料を取り寄せる
+```
+mkdir handson
+cd handson
+git clone https://github.com/ISITBODIK/CKAN-Install-Handson.git .
+```
+## 2. dockerを使えるようにする<br>
+```
+cd shell
+./docker.sh
+cd ..
+```
+## 3. nginxを動かしてみよう
+```
+docker run --name some-nginx -d -p 80:80 nginx
+```
+## 4. docker-composeでnginxを動かしてみよう<br>
+
 #CKANのデータを可視化する
 
 ##
@@ -22,3 +48,5 @@ https://lookerstudio.google.com/reporting/341f7ea6-38a8-43ac-8483-9b66c0f085b6/p
 https://www.city.naha.okinawa.jp/online/opendata/jinkou/open202212.html
 APIの元　沖縄県医療機関一覧（令和４年10月31日時点）
 https://data.bodik.jp/api/3/action/datastore_search_sql?sql=SELECT%20*%20from%20%225f21adb5-9eba-4e2f-b7aa-d6aa8ad05e02%22 （編集済み） 
+
+
